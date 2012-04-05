@@ -119,8 +119,12 @@ class ProcessList {
     // the OOM killer.  Note that the OOM killer only supports 6 slots, so we
     // can't give it a different value for every possible kind of process.
     private final int[] mOomAdj = new int[] {
-            FOREGROUND_APP_ADJ, VISIBLE_APP_ADJ, PERCEPTIBLE_APP_ADJ,
-            BACKUP_APP_ADJ, HIDDEN_APP_MIN_ADJ, HIDDEN_APP_MAX_ADJ
+//            FOREGROUND_APP_ADJ, VISIBLE_APP_ADJ, PERCEPTIBLE_APP_ADJ,    // 0,1,2,4,9,15
+//            BACKUP_APP_ADJ, HIDDEN_APP_MIN_ADJ, HIDDEN_APP_MAX_ADJ
+            FOREGROUND_APP_ADJ, HOME_APP_ADJ, PERCEPTIBLE_APP_ADJ,         // 0,1,2,4,9,15
+            HEAVY_WEIGHT_APP_ADJ, HIDDEN_APP_MIN_ADJ, HIDDEN_APP_MAX_ADJ
+
+
     };
     // These are the low-end OOM level limits.  This is appropriate for an
     // HVGA or smaller phone with less than 512MB.  Values are in KB.
