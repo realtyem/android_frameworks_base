@@ -121,7 +121,7 @@ class ProcessList {
     private final int[] mOomAdj = new int[] {
 //            FOREGROUND_APP_ADJ, VISIBLE_APP_ADJ, PERCEPTIBLE_APP_ADJ,    // 0,1,2,4,9,15
 //            BACKUP_APP_ADJ, HIDDEN_APP_MIN_ADJ, HIDDEN_APP_MAX_ADJ
-            FOREGROUND_APP_ADJ, HOME_APP_ADJ, PERCEPTIBLE_APP_ADJ,         // 0,1,2,4,9,15
+            FOREGROUND_APP_ADJ, VISIBLE_APP_ADJ, PERCEPTIBLE_APP_ADJ,         // 0,1,2,4,9,15
             HEAVY_WEIGHT_APP_ADJ, HIDDEN_APP_MIN_ADJ, HIDDEN_APP_MAX_ADJ
 
 
